@@ -1,0 +1,110 @@
+$primary-color-dark:   #455A64;
+$primary-color:        #607D8B;
+$primary-color-light:  #CFD8DC;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #FF5722;
+$primary-text-color:   #212121;
+$secondary-text-color: #727272;
+$divider-color:        #B6B6B6;
+
+@import 'bootstrap';
+
+body {
+  background-color: #FAFAFA;
+  font-size: 16px;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  color: $primary-text-color;
+}
+
+a, a:hover, a:visited, a:active, a:link {
+  color: $accent-color;
+  text-decoration: none;
+}
+
+.main {
+
+  h1 {
+    margin-bottom: 0;
+    font-size: 2em;
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+
+  h1, h2 {
+    text-align: left;
+    font-family: 'Roboto Slab', Times, serif;
+    font-weight: bold;
+    color: $primary-color-dark;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+
+}
+
+.main_content {
+  max-width: 90%;
+}
+
+.swiper_main {
+  height: 400px;
+  margin-bottom: 16px;
+}
+
+.swiper_mobile {
+  height: 400px;
+  margin-bottom: 16px;
+  display: none;
+}
+
+.swiper-slide {
+  background-color: $accent-color;
+}
+
+.shakeitup {
+  text-align: center;
+}
+
+.slide_content {
+  position: relative;
+  line-height: 400px;
+  z-index: 2;
+}
+
+.shakeitup:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url("/assets/images/shake_it_up.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 10px;
+  }
+
+  .swiper_main {
+    display: none;
+  }
+
+  .swiper_mobile {
+    display: inherit;
+  }
+}
