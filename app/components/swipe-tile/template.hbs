@@ -1,17 +1,21 @@
+<h3>Can you show us some demos?</h3>
+
 {{#swiper-container
   pagination=true
   loop=true
   centered=true
   slidesPerView=3
-  spaceBetween=5
-  class='swiper_main'}}
-    {{#swiper-slide class='slide shakeitup'}}
-      <div class="slide_content">Shake It Up</div>
-    {{/swiper-slide}}
-    {{#swiper-slide class='slide slide-2'}}Slide 2{{/swiper-slide}}
-    {{#swiper-slide class='slide slide-3'}}Slide 3{{/swiper-slide}}
-    {{#swiper-slide class='slide slide-4'}}Slide 4{{/swiper-slide}}
-    {{#swiper-slide class='slide slide-5'}}Slide 5{{/swiper-slide}}
+  spaceBetween=50
+  grabCursor=true
+  class='swiper_main'
+  onChange='handleChange'
+  }}
+
+  {{swiper-slide class='slide shakeitup'}}
+  {{swiper-slide class='slide movielookup'}}
+  {{swiper-slide class='slide ecommerce'}}
+  {{swiper-slide class='slide quoraclone'}}
+
 {{/swiper-container}}
 
 {{#swiper-container
@@ -20,12 +24,18 @@
   centered=true
   slidesPerView=1
   spaceBetween=5
+  grabCursor=true
+  onChange='handleChange'
   class='swiper_mobile'}}
-    {{#swiper-slide class='slide shakeitup'}}
-      <div class="slide_content">Shake It Up</div>
-    {{/swiper-slide}}
-    {{#swiper-slide class='slide slide-2'}}Slide 2{{/swiper-slide}}
-    {{#swiper-slide class='slide slide-3'}}Slide 3{{/swiper-slide}}
-    {{#swiper-slide class='slide slide-4'}}Slide 4{{/swiper-slide}}
-    {{#swiper-slide class='slide slide-5'}}Slide 5{{/swiper-slide}}
+
+  {{swiper-slide class='slide shakeitup'}}
+  {{swiper-slide class='slide movielookup'}}
+  {{swiper-slide class='slide ecommerce'}}
+  {{swiper-slide class='slide quoraclone'}}
+
 {{/swiper-container}}
+
+<a href={{slideLink}} target="_blank">
+  <h4>{{slideTitle}}</h4>
+  <small>{{slideDescription}}</small>
+</a>
