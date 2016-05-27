@@ -12,7 +12,7 @@ $divider-color:        #B6B6B6;
 body {
   background-color: #F6F6F6;
   font-size: 16px;
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: 'Roboto', "Helvetica Neue", Helvetica, sans-serif;
   color: $primary-text-color;
 }
 
@@ -36,10 +36,6 @@ a, a:hover, a:visited, a:active, a:link {
     font-size: 1.5em;
   }
 
-  h3 {
-    margin: 1.6em 0 1em 0;
-  }
-
   h1, h2, h3 {
     text-align: left;
     font-family: 'Roboto Slab', Times, serif;
@@ -55,10 +51,18 @@ a, a:hover, a:visited, a:active, a:link {
     font-size: 1.25em;
   }
 
+  hr {
+    border: 1px solid $primary-color-dark;
+  }
+
 }
 
 .main_content {
   max-width: 90%;
+}
+
+.swiper-container {
+  margin-top: 2px;
 }
 
 .swiper_main {
@@ -80,7 +84,7 @@ a, a:hover, a:visited, a:active, a:link {
   opacity: 1;
 }
 
-.shakeitup, .movielookup, .ecommerce, .quoraclone {
+.shakeitup, .movielookup, .ecommerce, .quoraclone, .salemsunshine {
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
@@ -105,6 +109,25 @@ a, a:hover, a:visited, a:active, a:link {
 
 .quoraclone {
   background-image: url("/assets/images/quoraclone.png");
+}
+
+.salemsunshine {
+  background-image: url("/assets/images/salem_sunshine.png");
+}
+
+.icon-row {
+  text-align: center;
+  a {
+    color: $primary-color;
+  }
+  a:hover {
+    color: $accent-color;
+  }
+}
+
+.fa {
+  display: inline-block;
+  margin: 0 16px 1em 16px;
 }
 
 @media (max-width: 700px) {

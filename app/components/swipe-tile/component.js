@@ -33,8 +33,13 @@ export default Ember.Component.extend({
           this.set("slideLink", "http://quora-clone-app.herokuapp.com/");
           break;
 
+        case "4":
+          this.set("slideTitle", "Salem Sunshine");
+          this.set("slideDescription", "A web app that consumes JSON data from the Open States API to search information about the Oregon State Legislature. Other Oregon bill tracker websites do not allow searches by both date and keywords, only one or the other.");
+          this.set("slideLink", "http://salem-sunshine.herokuapp.com/");
+          break;
+
         default:
-          console.log("in default");
           break;
       }
     }
