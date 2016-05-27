@@ -70,7 +70,7 @@ a, a:hover, a:visited, a:active, a:link {
 }
 
 .swiper_mobile {
-  height: 400px;
+  height: 300px;
   display: none;
 }
 
@@ -127,12 +127,17 @@ a, a:hover, a:visited, a:active, a:link {
 
 .fa {
   display: inline-block;
-  margin: 0 16px 1em 16px;
+  margin: 0 1em 1em 1em;
 }
 
 @media (max-width: 700px) {
   body {
     font-size: 12px;
+  }
+
+  .fa {
+    height: 16px;
+    margin: 0 10px 10px 10px;
   }
 
   .swiper_main {
@@ -141,5 +146,12 @@ a, a:hover, a:visited, a:active, a:link {
 
   .swiper_mobile {
     display: inherit;
+  }
+}
+
+@media (max-width: 400px) {
+  .fa {
+    height: 8px;
+    margin: 0 8px 8px 8px;
   }
 }
