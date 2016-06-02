@@ -22,8 +22,8 @@ export default Ember.Component.extend({
           break;
 
         case "2":
-          this.set("slideTitle", "Ecommerce Front-End");
-          this.set("slideDescription", "An online store built with Ember and using an Ember service for shopping cart functionality. Features include toggles for product attribute selection and a running total price. Uses Ember Paper add-on for material design features.");
+          this.set("slideTitle", "Ecommerce Site");
+          this.set("slideDescription", "An online store front-end built with Ember and using an Ember service for shopping cart functionality. Features include toggles for product attribute selection and a running total price. Uses Ember Paper add-on for material design features.");
           this.set("slideLink", "http://michael-scott-paper.herokuapp.com/");
           break;
 

@@ -37,7 +37,13 @@
 
 {{/swiper-container}}
 
-<a href={{slideLink}} target="_blank">
-  <h4>{{slideTitle}}</h4>
-  <small>{{slideDescription}}</small>
-</a>
+<div class="row">
+  <div class="col-xs-1 col-md-4" />
+  <div class="col-xs-10 col-md-4">
+    <a href={{slideLink}} target="_blank" class="btn btn-default btn-block slide-title-link">
+    {{slideTitle}}
+    </a>
+  </div>
+  <div class="col-xs-1 col-md-4" />
+</div>
+<small>{{slideDescription}}</small>

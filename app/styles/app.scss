@@ -6,11 +6,12 @@ $accent-color:         #FF5722;
 $primary-text-color:   #212121;
 $secondary-text-color: #727272;
 $divider-color:        #B6B6B6;
+$body-background:      #F6F6F6;
 
 @import 'bootstrap';
 
 body {
-  background-color: #F6F6F6;
+  background-color:$body-background;
   font-size: 16px;
   font-family: 'Roboto', "Helvetica Neue", Helvetica, sans-serif;
   color: $primary-text-color;
@@ -22,6 +23,14 @@ a, a:hover, a:visited, a:active, a:link {
   small {
     color: $primary-text-color;
   }
+}
+
+.slide-title-link {
+  margin: 1em 0;
+  background-color: $body-background;
+  border: 1px solid $primary-color-dark;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 .main {
@@ -43,22 +52,18 @@ a, a:hover, a:visited, a:active, a:link {
     color: $primary-color-dark;
   }
 
-  h4, small {
+  small {
     text-align: center;
   }
 
   p {
-    font-size: 1.25em;
+    font-size: 1.1em;
   }
 
   hr {
     border: 1px solid $primary-color-dark;
   }
 
-}
-
-.main_content {
-  max-width: 90%;
 }
 
 .swiper-container {
