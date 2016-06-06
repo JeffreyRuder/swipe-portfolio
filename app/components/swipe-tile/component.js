@@ -39,6 +39,12 @@ export default Ember.Component.extend({
           this.set("slideLink", "http://salem-sunshine.herokuapp.com/");
           break;
 
+        case "5":
+          this.set("slideTitle", "Candorhub");
+          this.set("slideDescription", "A web app that allows artists and designers to share and critique images. Built with React and Redux. Consumes a REST Rails API.");
+          this.set("slideLink", "https://developmentnow.com/2016/06/02/startup-in-a-box-developmentnow-interns-prepare-to-launch/");
+          break;
+
         default:
           break;
       }
