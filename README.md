@@ -31,4 +31,4 @@ You will need the following things properly installed on your computer.
 
 ### Demo
 
-Available at [http://jeffruder.herokuapp.com](Heroku).
+Available at (http://jeffruder.herokuapp.com)[Heroku].
